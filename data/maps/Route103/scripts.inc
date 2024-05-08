@@ -755,7 +755,7 @@ Fumo_Route103_Fisherman_Text_1:
 Fumo_Route103_Fisherman_Text_2:
 # 368 "data/maps/Route103/scripts.pory"
 	.string "It prevents wild pokemon from\n"
-	.string "ambushing you, sounds pretty cool$"
+	.string "ambushing you, sounds pretty cool.$"
 
 Fumo_Route103_Fisherman_Text_3:
 # 371 "data/maps/Route103/scripts.pory"

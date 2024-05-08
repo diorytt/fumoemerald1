@@ -218,3 +218,16 @@ Route102_Text_RouteSignPetalburg:
 	.string "ROUTE 102\n"
 # 110 "data/maps/Route102/scripts.pory"
 	.string "{LEFT_ARROW} PETALBURG CITY$"
+
+Fumo_Route102_Sign::
+# 114 "data/maps/Route102/scripts.pory"
+	lock
+# 115 "data/maps/Route102/scripts.pory"
+	msgbox Fumo_Route102_Sign_Text_0
+	return
+
+
+Fumo_Route102_Sign_Text_0:
+# 115 "data/maps/Route102/scripts.pory"
+	.string "This is a sign that says: Pokemon Fumo\n"
+	.string "Emerald, thanks for playing!$"
