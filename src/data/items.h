@@ -157,7 +157,7 @@ const struct Item gItemsInfo[] =
     [ITEM_POKE_BALL] =
     {
         .name = _("Poké Ball"),
-        .price = 200,
+        .price = 10,
         .description = COMPOUND_STRING(
             "A tool used for\n"
             "catching wild\n"
@@ -171,7 +171,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GREAT_BALL] =
     {
         .name = _("Great Ball"),
-        .price = 600,
+        .price = 20,
         .description = COMPOUND_STRING(
             "A good Ball with a\n"
             "higher catch rate\n"
@@ -185,7 +185,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ULTRA_BALL] =
     {
         .name = _("Ultra Ball"),
-        .price = (I_PRICE >= GEN_7) ? 800 : 1200,
+        .price = (I_PRICE >= GEN_7) ? 30 : 40,
         .description = COMPOUND_STRING(
             "A better Ball with\n"
             "a higher catch rate\n"
@@ -540,7 +540,7 @@ const struct Item gItemsInfo[] =
     [ITEM_POTION] =
     {
         .name = _("Potion"),
-        .price = (I_PRICE >= GEN_7) ? 200 : 300,
+        .price = (I_PRICE >= GEN_7) ? 10 : 15,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
             "Restores the HP of\n"
@@ -557,7 +557,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SUPER_POTION] =
     {
         .name = _("Super Potion"),
-        .price = 700,
+        .price = 20,
         .holdEffectParam = 60,
         .description = COMPOUND_STRING(
             "Restores the HP of\n"
@@ -579,7 +579,7 @@ const struct Item gItemsInfo[] =
     {
         .name = _("Hyper Potion"),
         .price = (I_PRICE >= GEN_2 || I_PRICE <= GEN_6) ? 1200 : 1500,
-        .holdEffectParam = 120,
+        .holdEffectParam = 40,
         .description = COMPOUND_STRING(
             "Restores the HP of\n"
             "a Pokémon by\n"
@@ -599,7 +599,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MAX_POTION] =
     {
         .name = _("Max Potion"),
-        .price = 2500,
+        .price = 60,
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
             "Fully restores the\n"
@@ -615,7 +615,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FULL_RESTORE] =
     {
         .name = _("Full Restore"),
-        .price = 3000,
+        .price = 100,
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
             "Fully restores the\n"
@@ -632,7 +632,7 @@ const struct Item gItemsInfo[] =
     [ITEM_REVIVE] =
     {
         .name = _("Revive"),
-        .price = (I_PRICE >= GEN_7) ? 2000 : 1500,
+        .price = (I_PRICE >= GEN_7) ? 150 : 100,
         .description = COMPOUND_STRING(
             "Revives a fainted\n"
             "Pokémon with half\n"
@@ -648,7 +648,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MAX_REVIVE] =
     {
         .name = _("Max Revive"),
-        .price = 4000,
+        .price = 200,
         .description = sMaxReviveDesc,
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_PARTY_MENU,
