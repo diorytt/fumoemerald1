@@ -113,4 +113,6 @@ Route102_Text_RouteSignPetalburg:
 script Fumo_Route102_Sign {
 	lock
 	msgbox(format("This is a sign that says: Pokemon Fumo Emerald, thanks for playing!"))
+	release
+	end
 }
