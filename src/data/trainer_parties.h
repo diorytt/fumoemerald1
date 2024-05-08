@@ -4027,9 +4027,32 @@ static const struct TrainerMon sParty_Shelby5[] = {
 
 static const struct TrainerMon sParty_Calvin1[] = {
     {
-    .lvl = 5,
-    .species = SPECIES_POOCHYENA,
-    }
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 7,
+    .species = SPECIES_MASCHIFF,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_BITE, MOVE_LEER, MOVE_SCARY_FACE, MOVE_SWAGGER},
+    .ability = ABILITY_INTIMIDATE,
+    .nature = NATURE_ADAMANT,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 7,
+    .species = SPECIES_LECHONK,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_DISARMING_VOICE, MOVE_ECHOED_VOICE, MOVE_MUD_SLAP, MOVE_WORK_UP},
+    .ability = ABILITY_GLUTTONY,
+    .nature = NATURE_MODEST,
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 7,
+    .species = SPECIES_FIDOUGH,
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_COVET, MOVE_BITE, MOVE_BABY_DOLL_EYES, MOVE_WORK_UP},
+    .ability = ABILITY_OWN_TEMPO,
+    .nature = NATURE_ADAMANT,
+    },
 };
 
 static const struct TrainerMon sParty_Billy[] = {
