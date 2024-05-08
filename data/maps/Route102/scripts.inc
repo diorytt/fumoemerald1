@@ -224,7 +224,9 @@ Fumo_Route102_Sign::
 	lock
 # 115 "data/maps/Route102/scripts.pory"
 	msgbox Fumo_Route102_Sign_Text_0
-	return
+# 116 "data/maps/Route102/scripts.pory"
+	release
+	end
 
 
 Fumo_Route102_Sign_Text_0:
