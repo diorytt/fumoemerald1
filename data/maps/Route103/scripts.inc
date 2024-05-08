@@ -708,3 +708,56 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 # 355 "data/maps/Route103/scripts.pory"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
+
+Fumo_Route103_Fisherman::
+# 360 "data/maps/Route103/scripts.pory"
+	lock
+# 361 "data/maps/Route103/scripts.pory"
+	faceplayer
+# 362 "data/maps/Route103/scripts.pory"
+	checkitem ITEM_CLEANSE_TAG, 1
+# 363 "data/maps/Route103/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Fumo_Route103_Fisherman_2
+# 371 "data/maps/Route103/scripts.pory"
+	msgbox Fumo_Route103_Fisherman_Text_3
+Fumo_Route103_Fisherman_1:
+# 373 "data/maps/Route103/scripts.pory"
+	release
+	end
+
+Fumo_Route103_Fisherman_2:
+# 364 "data/maps/Route103/scripts.pory"
+	msgbox Fumo_Route103_Fisherman_Text_0
+# 365 "data/maps/Route103/scripts.pory"
+	giveitem ITEM_SUPER_ROD
+# 366 "data/maps/Route103/scripts.pory"
+	msgbox Fumo_Route103_Fisherman_Text_1
+# 367 "data/maps/Route103/scripts.pory"
+	giveitem ITEM_CLEANSE_TAG
+# 368 "data/maps/Route103/scripts.pory"
+	msgbox Fumo_Route103_Fisherman_Text_2
+	goto Fumo_Route103_Fisherman_1
+
+
+Fumo_Route103_Fisherman_Text_0:
+# 364 "data/maps/Route103/scripts.pory"
+	.string "Man, fishing is getting SO boring, I\n"
+	.string "CAN'T stand it anymore! You are a kid\l"
+	.string "right? Maybe you will find something\l"
+	.string "enjoyable in this$"
+
+Fumo_Route103_Fisherman_Text_1:
+# 366 "data/maps/Route103/scripts.pory"
+	.string "Also this looks like it could be useful\n"
+	.string "for you$"
+
+Fumo_Route103_Fisherman_Text_2:
+# 368 "data/maps/Route103/scripts.pory"
+	.string "It prevents wild pokemon from\n"
+	.string "ambushing you, sounds pretty cool$"
+
+Fumo_Route103_Fisherman_Text_3:
+# 371 "data/maps/Route103/scripts.pory"
+	.string "If i can't fish anymore, what is there\n"
+	.string "left to do...$"

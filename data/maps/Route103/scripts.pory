@@ -355,3 +355,21 @@ Route103_Text_RouteSign:
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
 `
+
+script Fumo_Route103_Fisherman {
+	lock
+	faceplayer
+	checkitem(ITEM_CLEANSE_TAG, 1)
+	if (var(VAR_RESULT) == FALSE) {
+		msgbox(format("Man, fishing is getting SO boring, I CAN'T stand it anymore! You are a kid right? Maybe you will find something enjoyable in this"))
+		giveitem(ITEM_SUPER_ROD)
+		msgbox(format("Also this looks like it could be useful for you"))
+		giveitem(ITEM_CLEANSE_TAG)
+		msgbox(format("It prevents wild pokemon from ambushing you, sounds pretty cool."))
+	}
+	else {
+		msgbox(format("If i can't fish anymore, what is there left to do..."))
+	}
+	release
+	end
+}
