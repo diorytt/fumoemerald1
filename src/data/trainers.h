@@ -1374,9 +1374,9 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = F_TRAINER_FEMALE | TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .trainerPic = TRAINER_PIC_LADY,
         .trainerName = _("CINDY"),
-        .items = {ITEM_FULL_RESTORE, ITEM_NONE, ITEM_NONE, ITEM_NONE},
+        .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_Cindy1),
     },
 
@@ -3832,7 +3832,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("CALVIN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_Calvin1),
     },
 
@@ -3844,7 +3844,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("BILLY"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_Billy),
     },
 
@@ -4012,7 +4012,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("ALLEN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_Allen),
     },
 
@@ -7254,7 +7254,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("TIANA"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_Tiana),
     },
 
@@ -7398,7 +7398,7 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("RICK"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_Rick),
     },
 
@@ -8369,9 +8369,20 @@ const struct Trainer gTrainers[] = {
         .trainerPic = TRAINER_PIC_FISHERMAN,
         .trainerName = _("DARIAN"),
         .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
         .party = TRAINER_PARTY(sParty_Darian),
+    },
+    [TRAINER_OTTO] =
+    {
+        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerName = _("OTTO"),
+        .items = {},
+        .doubleBattle = TRUE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .party = TRAINER_PARTY(sParty_Otto),
     },
 
     [TRAINER_HAILEY] =
@@ -8420,6 +8431,18 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .party = TRAINER_PARTY(sParty_Joseph),
+    },
+
+    [TRAINER_SCOTTIE] =
+    {
+        .trainerClass = TRAINER_CLASS_BLACK_BELT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerName = _("SCOTTIE"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_PREFER_STRONGEST_MOVE | AI_FLAG_PREFER_BATON_PASS | AI_FLAG_HP_AWARE | AI_FLAG_HELP_PARTNER | AI_FLAG_OMNISCIENT | AI_FLAG_SMART_MON_CHOICES,
+        .party = TRAINER_PARTY(sParty_Scottie),
     },
 
     [TRAINER_ALYSSA] =

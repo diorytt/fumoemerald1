@@ -295,8 +295,9 @@ Route104_EventScript_Girl1::
 	msgbox Route104_Text_BrineyLivesInSeasideCottage, MSGBOX_NPC
 	end
 
-Route104_EventScript_BugCatcher::
-	msgbox Route104_Text_WhatsItLikeAtBottomOfSea, MSGBOX_SIGN
+Route104_EventScript_Otto::
+	trainerbattle_single TRAINER_OTTO, Route104_Text_OttoIntro, Route104_Text_OttoDefeat
+	msgbox Route104_Text_OttoPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route104_EventScript_BrineysCottageSign::
@@ -343,8 +344,9 @@ Route104_EventScript_ReceivedBulletSeed::
 	release
 	end
 
-Route104_EventScript_Girl2::
-	msgbox Route104_Text_ImNotATrainer, MSGBOX_NPC
+Route104_EventScript_Scottie::
+	trainerbattle_single TRAINER_SCOTTIE, Route104_Text_ScottieIntro, Route104_Text_ScottieDefeat
+	msgbox Route104_Text_ScottiePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route104_EventScript_SailToDewford::

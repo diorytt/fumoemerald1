@@ -427,6 +427,30 @@ Route104_Text_DarianPostBattle:
 	.string "Hey, MAGIKARP, you sure don't live up\n"
 	.string "to your name, do you?$"
 
+Route104_Text_OttoIntro:
+	.string "I caught a strong and nimble bug POKéMON!\p"
+	.string "It has this swarmy quality to it!\n"
+	.string "It surely looks intimidating, surely it does!$"
+
+Route104_Text_OttoDefeat:
+	.string "This is unbelievable…$"
+
+Route104_Text_OttoPostBattle:
+	.string "This guy's POKéMON SUCK\n"
+	.string "what a useless partner!$"
+
+Route104_Text_ScottieIntro:
+	.string "I am strong.\p"
+	.string "You won't stand a chance against me.\n"
+	.string "Don't even bother fighting back.$"
+
+Route104_Text_ScottieDefeat:
+	.string "How could I lose to a child??$"
+
+Route104_Text_ScottiePostBattle:
+	.string "You are a strong.\n"
+	.string "i can no longer call myself that.$"
+
 Route105_Text_FosterIntro:
 	.string "There's supposed to be a mystical\n"
 	.string "rock around here.\l"
