@@ -382,11 +382,13 @@ Route104_Text_WinstonPostRematch:
 	.string "It's so deep, the world of POKéMON…$"
 
 Route104_Text_CindyIntro:
-	.string "We must have been fated to meet.\n"
-	.string "May I ask you for a battle?$"
+	.string "The Petalburg Forest is full\n"
+	.string "of dangerous pokemon.$"
+	.string "Prove me that you're able$"
+	.string "to handle that!$"
 
 Route104_Text_CindyDefeat:
-	.string "Oh, my!$"
+	.string "Oh, my! You're so ready to go!$"
 
 Route104_Text_CindyPostBattle:
 	.string "“Hello” is the beginning of “good-bye.”\n"
@@ -449,7 +451,7 @@ Route104_Text_ScottieDefeat:
 
 Route104_Text_ScottiePostBattle:
 	.string "You are a strong.\n"
-	.string "i can no longer call myself that.$"
+	.string "I can no longer call myself that.$"
 
 Route105_Text_FosterIntro:
 	.string "There's supposed to be a mystical\n"

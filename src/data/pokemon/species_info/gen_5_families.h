@@ -2411,7 +2411,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Tympole)
         .levelUpLearnset = sTympoleLevelUpLearnset,
         .teachableLearnset = sTympoleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PALPITOAD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PALPITOAD}),
     },
 
     [SPECIES_PALPITOAD] =
@@ -2464,7 +2464,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Palpitoad)
         .levelUpLearnset = sPalpitoadLevelUpLearnset,
         .teachableLearnset = sPalpitoadTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SEISMITOAD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_SEISMITOAD}),
     },
 
     [SPECIES_SEISMITOAD] =
