@@ -13635,7 +13635,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "Damages adjacent Pokémon and\n"
             "heals up by half of it."),
         .effect = EFFECT_ABSORB,
-        .power = B_UPDATED_MOVE_DATA >= GEN_7 ? 70 : 50,
+        .power = B_UPDATED_MOVE_DATA >= GEN_7 ? 65 : 50,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 20,
@@ -16226,7 +16226,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "half the damage inflicted."),
         #endif
         .effect = EFFECT_ABSORB,
-        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 70 : 90,
+        .power = B_UPDATED_MOVE_DATA >= GEN_8 ? 65 : 90,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_8 ? 20 : 15,
