@@ -1840,8 +1840,8 @@
                 "species": "SPECIES_GOSSIFLEUR"
               },
               {
-                "min_level": 6,
-                "max_level": 6,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_BUDEW"
               },
               {
@@ -1855,13 +1855,13 @@
                 "species": "SPECIES_SEWADDLE"
               },
               {
-                "min_level": 6,
-                "max_level": 6,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_CHIKORITA"
               },
               {
-                "min_level": 6,
-                "max_level": 6,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_EXEGGCUTE"
               },
               {
@@ -1875,13 +1875,13 @@
                 "species": "SPECIES_ROSELIA"
               },
               {
-                "min_level": 6,
-                "max_level": 6,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_APPLIN"
               },
               {
-                "min_level": 6,
-                "max_level": 6,
+                "min_level": 5,
+                "max_level": 5,
                 "species": "SPECIES_COMFEY"
               }
             ]
