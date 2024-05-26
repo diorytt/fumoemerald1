@@ -946,6 +946,7 @@ Route104_EventScript_Cindy::
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_RematchCindy
 	setvar VAR_0x8004, TRAINER_CINDY_1
+	setflag FLAG_CINDY_BEATEN
 	specialvar VAR_RESULT, IsTrainerRegistered
 	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterCindy
 	msgbox Route104_Text_CindyPostBattle, MSGBOX_DEFAULT
