@@ -8207,7 +8207,7 @@ static const struct TrainerMon sParty_Jose[] = {
     .lvl = 17,
     .species = SPECIES_BEEDRILL,
     .heldItem = ITEM_SCOPE_LENS,
-    .moves = {MOVE_FELL_STINGER, MOVE_POISON_JAB, MOVE_THROAT_JOB, MOVE_FOCUS_ENERGY},
+    .moves = {MOVE_FELL_STINGER, MOVE_POISON_JAB, MOVE_THROAT_CHOP, MOVE_FOCUS_ENERGY},
     .ability = ABILITY_SNIPER,
     .nature = NATURE_ADAMANT,
     },
