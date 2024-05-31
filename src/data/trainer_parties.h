@@ -109,7 +109,7 @@ static const struct TrainerMon sParty_GruntPetalburgWoods[] = {
     .lvl = 14,
     .species = SPECIES_FLITTLE,
     .heldItem = ITEM_LUM_BERRY,
-    .moves = {MOVE_STORED_POWER, MOVE_DISARMING_VOICE, MOVE_HYPNOSIS, MOVE_CALM_MIND},
+    .moves = {MOVE_STORED_POWER, MOVE_DISARMING_VOICE, MOVE_HYPNOSIS, MOVE_NONE},
     .ability = ABILITY_SPEED_BOOST,
     .nature = NATURE_MODEST,
     },
@@ -3364,7 +3364,7 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 19,
+    .lvl = 21,
     .species = SPECIES_MINIOR_METEOR_VIOLET,
     .heldItem = ITEM_POWER_HERB,
     .moves = {MOVE_METEOR_BEAM, MOVE_ACROBATICS, MOVE_DAZZLING_GLEAM, MOVE_SELF_DESTRUCT},
@@ -3373,12 +3373,12 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 20,
+    .lvl = 21,
     .species = SPECIES_TYPE_NULL,
     .heldItem = ITEM_EVIOLITE,
-    .moves = {MOVE_TRI_ATTACK, MOVE_ROCK_SLIDE, MOVE_SLEEP_TALK, MOVE_REST},
-    .ability = ABILITY_HYDRATION,
-    .nature = NATURE_NAIVE,
+    .moves = {MOVE_FACADE, MOVE_ROCK_SLIDE, MOVE_SLEEP_TALK, MOVE_REST},
+    .ability = ABILITY_BATTLE_ARMOR,
+    .nature = NATURE_ADAMANT,
     },
 };
 
@@ -9387,7 +9387,7 @@ static const struct TrainerMon sParty_Darian[] = {
     .lvl = 9,
     .species = SPECIES_CHINCHOU,
     .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_BOUNCY_BUBBLE, MOVE_ELECTROWEB, MOVE_NONE, MOVE_NONE},
+    .moves = {MOVE_CHILLING_WATER, MOVE_ELECTROWEB, MOVE_NONE, MOVE_NONE},
     .ability = ABILITY_VOLT_ABSORB,
     .nature = NATURE_MODEST,
     },
@@ -9435,7 +9435,7 @@ static const struct TrainerMon sParty_Otto[] = {
 static const struct TrainerMon sParty_Scottie[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 11,
+    .lvl = 10,
     .species = SPECIES_PAWMO,
     .heldItem = ITEM_ORAN_BERRY,
     .moves = {MOVE_ARM_THRUST, MOVE_VOLT_SWITCH, MOVE_FAKE_OUT, MOVE_NONE},
@@ -9444,7 +9444,7 @@ static const struct TrainerMon sParty_Scottie[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 11,
+    .lvl = 10,
     .species = SPECIES_CROAGUNK,
     .heldItem = ITEM_CUSTAP_BERRY,
     .moves = {MOVE_FAKE_OUT, MOVE_POISON_STING, MOVE_BELCH, MOVE_VACUUM_WAVE},
@@ -9453,7 +9453,7 @@ static const struct TrainerMon sParty_Scottie[] = {
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .lvl = 12,
+    .lvl = 11,
     .species = SPECIES_CRABRAWLER,
     .heldItem = ITEM_MYSTIC_WATER,
     .moves = {MOVE_ROCK_SMASH, MOVE_BUBBLE_BEAM, MOVE_ROCK_TOMB, MOVE_BULLDOZE  },
