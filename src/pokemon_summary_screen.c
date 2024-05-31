@@ -3215,6 +3215,8 @@ static void BufferMonTrainerMemo(void)
         {
             if (sum->metLevel == 0)
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
+            else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
+                text = gText_XNatureFatefulEncounter;
             else
                 text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZ;
         }

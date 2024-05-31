@@ -967,10 +967,14 @@ void ChooseStarter(void)
 static void CB2_GiveStarter(void)
 {
     u16 starterMon;
+    u16 starterMet = METLOC_FATEFUL_ENCOUNTER;
+    bool32 isModernFatefulEncounter = TRUE;
 
     *GetVarPointer(VAR_STARTER_MON) = gSpecialVar_Result;
     starterMon = GetStarterPokemon(gSpecialVar_Result);
-    ScriptGiveMon(starterMon, 5, ITEM_NONE);
+    ScriptGiveStarterMon(starterMon, 5, ITEM_NONE);
+    SetMonData(&gPlayerParty[0], MON_DATA_MET_LOCATION, &starterMet);
+    SetMonData(&gPlayerParty[0], MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
     ResetTasks();
     PlayBattleBGM();
     SetMainCallback2(CB2_StartFirstBattle);

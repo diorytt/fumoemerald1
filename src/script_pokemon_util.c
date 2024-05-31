@@ -427,6 +427,15 @@ u32 ScriptGiveMon(u16 species, u8 level, u16 item)
     return ScriptGiveMonParameterized(species, level, item, ITEM_POKE_BALL, NUM_NATURES, NUM_ABILITY_PERSONALITY, MON_GENDERLESS, evs, ivs, moves, FALSE, FALSE, NUMBER_OF_MON_TYPES);
 }
 
+u32 ScriptGiveStarterMon(u16 species, u8 level, u16 item)
+{
+    u8 evs[NUM_STATS]        = {0, 0, 0, 0, 0, 0};
+    u8 ivs[NUM_STATS]        = {31, 31, 31, 31, 31, 31};  // ScriptGiveMonParameterized won't touch the stats' IV.
+    u16 moves[MAX_MON_MOVES] = {MOVE_NONE, MOVE_NONE, MOVE_NONE, MOVE_NONE};
+
+    return ScriptGiveMonParameterized(species, level, item, ITEM_BEAST_BALL, NUM_NATURES, 2, MON_GENDERLESS, evs, ivs, moves, FALSE, FALSE, NUMBER_OF_MON_TYPES);
+}
+
 #define PARSE_FLAG(n, default_) (flags & (1 << (n))) ? VarGet(ScriptReadHalfword(ctx)) : (default_)
 
 void ScrCmd_givemon(struct ScriptContext *ctx)
