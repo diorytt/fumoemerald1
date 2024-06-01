@@ -802,7 +802,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         //FOOTPRINT(Nymble)
         .levelUpLearnset = sNymbleLevelUpLearnset,
         .teachableLearnset = sNymbleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_LOKIX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_LOKIX}),
     },
 
     [SPECIES_LOKIX] =

@@ -6634,7 +6634,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_AMORPHOUS),
-        .abilities = { ABILITY_WATER_ABSORB, ABILITY_CURSED_BODY, ABILITY_DAMP },
+        .abilities = { ABILITY_CURSED_BODY, ABILITY_DAMP, ABILITY_WATER_ABSORB },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Frillish"),
         .cryId = CRY_FRILLISH,
@@ -6675,7 +6675,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Frillish)
         .levelUpLearnset = sFrillishLevelUpLearnset,
         .teachableLearnset = sFrillishTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_JELLICENT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_JELLICENT}),
     },
 
     [SPECIES_JELLICENT] =
