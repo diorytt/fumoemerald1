@@ -1895,23 +1895,23 @@ Route104_EventScript_Cindy::
 # 948 "data/maps/Route104/scripts.pory"
 	setvar VAR_0x8004, TRAINER_CINDY_1
 # 949 "data/maps/Route104/scripts.pory"
-	setflag FLAG_CINDY_BEATEN
-# 950 "data/maps/Route104/scripts.pory"
 	specialvar VAR_RESULT, IsTrainerRegistered
-# 951 "data/maps/Route104/scripts.pory"
+# 950 "data/maps/Route104/scripts.pory"
 	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterCindy
-# 952 "data/maps/Route104/scripts.pory"
+# 951 "data/maps/Route104/scripts.pory"
 	msgbox Route104_Text_CindyPostBattle, MSGBOX_DEFAULT
-# 953 "data/maps/Route104/scripts.pory"
+# 952 "data/maps/Route104/scripts.pory"
 	release
-# 954 "data/maps/Route104/scripts.pory"
+# 953 "data/maps/Route104/scripts.pory"
 	end
-# 955 "data/maps/Route104/scripts.pory"
+# 954 "data/maps/Route104/scripts.pory"
 
-# 956 "data/maps/Route104/scripts.pory"
+# 955 "data/maps/Route104/scripts.pory"
 Route104_EventScript_TryRegisterCindyAfterBattle::
-# 957 "data/maps/Route104/scripts.pory"
+# 956 "data/maps/Route104/scripts.pory"
 	special PlayerFaceTrainerAfterBattle
+# 957 "data/maps/Route104/scripts.pory"
+	setflag FLAG_CINDY_BEATEN
 # 958 "data/maps/Route104/scripts.pory"
 	waitmovement 0
 # 959 "data/maps/Route104/scripts.pory"
